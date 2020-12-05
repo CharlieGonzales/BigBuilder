@@ -1,2 +1,2 @@
-<?php include_once("websiteko.html");
+<?php include_once("index.html");
 ?>
