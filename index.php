@@ -50,7 +50,7 @@
                     <br><br>
                     <div class="search">
 
-                        <button type="Submit">Login</button>
+                        <button name="Submit" type="submit" value="Login">Login</button>
                     </div>
                 </b>
 
