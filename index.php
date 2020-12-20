@@ -40,6 +40,11 @@
 
             <form class="reg" action="" method="post" name="Login_Form">
                 <b>
+			 <?php if(isset($msg)){?>
+    				
+    			  <?php echo $msg;?>
+    				
+ 				   <?php } ?>
                     Email: <input name="Username" type="text" placeholder="        abcd@email.com" name="awan" required>
                     <br>
                     <br>
