@@ -17,7 +17,7 @@
 			exit;
 		} else {
 			/*Unsuccessful attempt: Set error message */
-			$msg="<span style='color:red, font-size:300px, border:black solid'>Invalid Login Details</span>";
+			$error= "Invalid Login Details!!";
 		}
 	}
 ?>
