@@ -45,6 +45,7 @@
     			  <?php echo $msg;?>
     				
  				   <?php } ?>
+			<br>
                     Email: <input name="Username" type="text" placeholder="        abcd@email.com" name="awan" required>
                     <br>
                     <br>
