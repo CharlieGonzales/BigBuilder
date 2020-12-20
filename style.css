@@ -76,7 +76,7 @@ margin:5px;
 transition: all 0.3s ease;
 }
 .bgimg {
-    background-image:url(bg.jpg);
+    background-color:white;
     position: relative;
     min-height:650px;
     background-size: cover;
