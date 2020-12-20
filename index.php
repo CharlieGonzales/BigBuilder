@@ -1,5 +1,5 @@
 <?php session_start(); /* Starts the session */
-$error = "";
+
 	/* Check Login form submitted */
 	if(isset($_POST['Submit'])){
 		/* Define username and associated password array */
@@ -17,7 +17,7 @@ $error = "";
 			exit;
 		} else {
 			/*Unsuccessful attempt: Set error message */
-			$error= "Invalid Login Details!!";
+			$msg="<span style='color:red'>Invalid Login Details</span>";
 		}
 	}
 ?>
