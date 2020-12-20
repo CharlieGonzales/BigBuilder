@@ -38,12 +38,12 @@
             <br>
 
 
-            <form class="reg">
+            <form class="reg" action="" method="post" name="Login_Form">
                 <b>
-                    Email: <input type="text" placeholder="        abcd@email.com" name="awan" required>
+                    Email: <input name="Username" type="text" placeholder="        abcd@email.com" name="awan" required>
                     <br>
                     <br>
-                    Password:<input type="password" placeholder="        as12ad3AW" size="17" required>
+                    Password:<input name="Password" type="password" placeholder="        as12ad3AW" size="17" required>
                     <br> <br>
                     Not yet a member?&emsp;<a href="C:/Users/Asus/Documents/webdev/registration%20form.html">Register</a>
 
