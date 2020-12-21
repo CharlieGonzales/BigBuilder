@@ -3,7 +3,7 @@
 	/* Check Login form submitted */
 	if(isset($_POST['Submit'])){
 		/* Define username and associated password array */
-		$logins = array('Alex' => '123456','username1' => 'password1','username2' => 'password2');
+		$logins = array('admin' => '123456','username1' => 'password1','username2' => 'password2');
 
 		/* Check and assign submitted Username and Password to new variable */
 		$Username = isset($_POST['Username']) ? $_POST['Username'] : '';
@@ -17,7 +17,7 @@
 			exit;
 		} else {
 			/*Unsuccessful attempt: Set error message */
-			$msg="<span style='color:red'>Invalid Login Details</span>";
+		         $msg="<span style='color:red, font-size:15px'>Invalid Login Details</span>";
 		}
 	}
 ?>
