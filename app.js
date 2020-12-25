@@ -61,5 +61,5 @@ sections.forEach(section=>{
     
 var btn = document.getElementById('mybtn');
 btn.addEventListener('click', function() {
-  document.location.href = 'login.php';
+  document.location.href = 'index.php';
 });
