@@ -13,6 +13,7 @@
 		         $msg="<span style='color:red; font-size:15px;'>Invalid Login Details</span>";
 		}
 	}
+	
 ?>
 
 <!DOCTYPE HTML>
@@ -54,13 +55,13 @@
 
             <tr class="buttons">
                 <td> <button type="Submit">Login</button></td>
-                <td> <button type="button">Signup</button></td>
+                <td> <button type="button" id="btn">Signup</button></td>
             </tr>
 
         </table>
 
         </form>
-
+<script src="app.js"></script>
 </body>
 
 </html>
