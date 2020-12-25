@@ -43,8 +43,8 @@
             <br>
             <br>
             <tr class="input">
-                <td>  <input type="text" placeholder="   abcd@email.com" name="awan" size="15" required> </td>
-                <td> <input type="password" placeholder="        as12ad3AW" size="15" required></td>
+                <td>  <input  name="Username" type="text" placeholder="   abcd@email.com" name="awan" size="15" required> </td>
+                <td> <input name="Password" type="password" placeholder="        as12ad3AW" size="15" required></td>
             </tr>
             <tr class="icon">
                 <td> <img src="user.png" alt="logo" /></td>
@@ -54,7 +54,7 @@
 
 
             <tr class="buttons">
-                <td> <button type="Submit">Login</button></td>
+                <td> <button type="Submit" name="Submit">Login</button></td>
                 <td> <button type="button" id="mybtn">Signup</button></td>
             </tr>
 
