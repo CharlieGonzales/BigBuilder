@@ -1156,8 +1156,7 @@ h7{
           
         }
         .feedback .feedform {
-            position: relative;
-            left: -70px;
+            position: relative;    
             width:1000px;
         }
         .feedback .feedform a{
