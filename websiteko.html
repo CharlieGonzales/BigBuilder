@@ -16,165 +16,246 @@ if(!isset($_SESSION['UserData']['Username'])){
 <meta http-equiv="X-UA-Compatible" content="ied=edge"/>
 <link rel="stylesheet" type="text/css" href="style.css">
 
-  <title>BigBuilders</title>
 </head>
 
 <body>
 
-        <nav>
-              <div class="logo">
-                  <h1>BigBuilders</h1>
-              </div>
+	<nav>
+		<div class="logo">
+			<img src="logo.png" alt="logo"/>
+			<h1>BigBuilders</h1>
+		</div>
 
-              <ul class="nav-links">
-                     <li><a href="#Home">HOME</a>  </li>
-                     <li ><a href="#Services" >SERVICES</a>  </li>
-                    <li><a href="#Category">PRODUCTS</a>  </li>
-                    <li><a href="#">ABOUT US</a>    </li>
+		<ul class="nav-links">
+			<li><a data-page="Home" href="#Home">HOME</a>  </li>
+			<li><a data-page= "Services" href="#Services">SERVICES</a>  </li>
+			<li><a data-page= "Category" href="#Category">PRODUCTS</a>  </li>
+			<li><a data-page= "AboutUs" href="#AboutUs">ABOUT US</a>    </li>
+			<div class="bubble"></div>
+		</ul>
+		<div class="search">
+			<button type="Submit">Search</button>
+			<input type="text" placeholder="&emsp;&emsp;Search">
+		</div>
 
-                    </ul>
-<div class="search">
-       <button type="Submit">Search</button>
-        <input type="text"   placeholder="&emsp;&emsp;Search" >
-</div>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
 
-<div class="burger">
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
+		</div>
+	</nav>
 
-</div>
-        </nav>
+	<main>
+		<!-- HOME SECTION-->
+		<section class="Home" id="Home">
 
-    <section>
- <div class="bgimg" id="Home">
-             <ul class="navlinks2">
-                <li><a href="C:\Users\Asus\Documents\webdev\account.html">Account</a>  </li>
-                  <li><a href="C:\Users\Asus\Documents\webdev\feedbackform.html">Feedback</a>  </li>
-             </ul>
 
-<img class="man" src="mans.png"   alt="man">
-</div>
+			<img class="man" src="mans.png" alt="man">
 
-<section class="Services" id="Services">
- <ul class="service">
-            <li><a href="#">DESIGN/BUILDING</a>  </li>
-            <li><a href="#">REMODELING</a>  </li>
-            <li><a href="#">LICENSING & CONSULTING</a>  </li>
-             <li><a href="#">BUILDING SUSTAINABILITY</a>    </li>
-        </ul>
-<div class="description">
-<h2>Services</h2>
 
-<br>
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
- Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
- Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
- Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-</div>
-    </section>
- </section>
-    <section class="Category" id="Category">
-        <div class="title">
-    <h4>Categories</h4> <br><br>
-        </div>
-  <div class="content" id="content">
+		</section>
+		<!--HOME SECTION-->
 
-      <div class="box">
-          <div class="imgbx">
-            <a href ="#" >
-            <img src="metal.png" alt="metal products">  </a>
-          </div>
-          <div class="text">
-          <h5>Metals</h5>
-          </div>
-      </div>
-        <div class="box">
-          <div class="imgbx">
-            <a href ="#" >
-             <img src="plastic.jpg" alt="plastic products">
-            </a>
-          </div>
-          <div class="text">
-          <h5>Plastics</h5>
-          </div>
-      </div>
-       <div class="box">
-          <div class="imgbx">
-            <a href ="#" >
-             <img src="ceramics.jpg" alt="ceramic products">
-            </a>
-          </div>
-          <div class="text">
-          <h5>Ceramics</h5>
-          </div>
-      </div>
-       <div class="box">
-          <div class="imgbx">
-            <a href ="#" >
-          <img src="concrete.jpg" alt="concrete products">
-          </a>
-          </div>
-          <div class="text">
-          <h5>Concretes</h5>
-          </div>
-      </div>
-       <div class="box">
-          <div class="imgbx">
 
-            <a href ="#" >
-             <img src="glass.jpg" alt="glass products">
-             </a>
-          </div>
-          <div class="text">
-          <h5>Glasses</h5>
-          </div>
-      </div>
-            <div class="box">
-          <div class="imgbx">
-              <a href ="#" >
-             <img src="lumber.png" alt="lumber products">
-          </a>
-          </div>
-          <div class="text">
-          <h5>Lumbers</h5>
-          </div>
-      </div>
-      <div class="box">
-          <div class="imgbx">
-              <a href ="#" >
-             <img src="paint.jpg" alt="paint products">
-          </a>
-          </div>
-          <div class="text">
-          <h5>Paints</h5>
-          </div>
-      </div>
-      <div class="box">
-          <div class="imgbx">
-              <a href ="#" >
-             <img src="aluminum.jpg" alt="aluminum products">
-          </a>
-          </div>
-          <div class="text">
-          <h5>Aluminums</h5>
-          </div>
-      </div>
-      <div class="box">
-          <div class="imgbx">
-              <a href ="#" >
-             <img src="tools.jpg" alt="tools">
-              </a>
-          </div>
-          <div class="text">
-          <h5>Construction Tools</h5>
-          </div>
-      </div>
+		<!-- SERVICES SECTION-->
 
-  </div>
-    </section>
-  <script src="app.js"></script>
+		<section class="Services" id="Services">
+			<ul class="service">
+				<li><a href="#">DESIGN/BUILDING</a>  </li>
+				<li><a href="#">REMODELING</a>  </li>
+				<li><a href="#">LICENSING & CONSULTING</a>  </li>
+				<li><a href="#">BUILDING SUSTAINABILITY</a>    </li>
+			</ul>
+			<div class="description">
+				<h2>Services</h2>
+
+				<br>
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+			</div>
+		</section>
+			<!--SERVICES SECTION-->
+
+
+		<!-- PRODUCTS  SECTION-->
+
+		<section class="Category" id="Category">
+			<div class="title">
+				<h4>Categories</h4> <br><br>
+			</div>
+			<div class="content" id="content">
+
+				<div class="box">
+					<div class="imgbx">
+						<a href="#">
+							<img src="metal.png" alt="metal products">
+						</a>
+					</div>
+					<div class="text">
+						<h5>Metals</h5>
+					</div>
+				</div>
+				<div class="box">
+					<div class="imgbx">
+						<a href="#">
+							<img src="plastic.jpg" alt="plastic products">
+						</a>
+					</div>
+					<div class="text">
+						<h5>Plastics</h5>
+					</div>
+				</div>
+				<div class="box">
+					<div class="imgbx">
+						<a href="#">
+							<img src="ceramics.jpg" alt="ceramic products">
+						</a>
+					</div>
+					<div class="text">
+						<h5>Ceramics</h5>
+					</div>
+				</div>
+				<div class="box">
+					<div class="imgbx">
+						<a href="#">
+							<img src="concrete.jpg" alt="concrete products">
+						</a>
+					</div>
+					<div class="text">
+						<h5>Concretes</h5>
+					</div>
+				</div>
+				<div class="box">
+					<div class="imgbx">
+
+						<a href="#">
+							<img src="glass.jpg" alt="glass products">
+						</a>
+					</div>
+					<div class="text">
+						<h5>Glasses</h5>
+					</div>
+				</div>
+				<div class="box">
+					<div class="imgbx">
+						<a href="#">
+							<img src="lumber.png" alt="lumber products">
+						</a>
+					</div>
+					<div class="text">
+						<h5>Lumbers</h5>
+					</div>
+				</div>
+				<div class="box">
+					<div class="imgbx">
+						<a href="#">
+							<img src="paint.jpg" alt="paint products">
+						</a>
+					</div>
+					<div class="text">
+						<h5>Paints</h5>
+					</div>
+				</div>
+				<div class="box">
+					<div class="imgbx">
+						<a href="#">
+							<img src="aluminum.jpg" alt="aluminum products">
+						</a>
+					</div>
+					<div class="text">
+						<h5>Aluminums</h5>
+					</div>
+				</div>
+				<div class="box">
+					<div class="imgbx">
+						<a href="#">
+							<img src="tools.jpg" alt="tools">
+						</a>
+					</div>
+					<div class="text">
+						<h5>Construction Tools</h5>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- PRODUCT SECTION-->
+		<!-- ABOUT US SECTION-->
+
+		<section class="AboutUs" id="AboutUs">
+			
+			<div class="testimonies">
+				<h4> They Said About Us </h4>
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				</p>
+			</div>
+				<div class="contents">
+					<div class="boxes">
+						<div class="imgbxes">
+							<img src="1.jpg" alt="someone famous" />
+						</div>
+						<div class="txt">
+							<p>
+								"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor
+								sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+							</p><br>
+							<h8>Someone Famous</h8>
+						</div>
+					</div>
+					<div class="boxes">
+						<div class="imgbxes">
+							<img src="2.jpg" alt="someone famous" />
+						</div>
+						<div class="txt">
+							<p>
+								"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor
+								sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+							</p>
+							<br>
+							<h8>Someone Famous</h8>
+						</div>
+					</div>
+					<div class="boxes">
+						<div class="imgbxes">
+							<img src="3.jpg" alt="someone famous" />
+						</div>
+						<div class="txt">
+							<p>
+								"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor
+								sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+							</p><br>
+							<h8>Someone Famous</h8>
+						</div>
+					</div>
+				</div>
+
+
+		</section>
+		<!-- ABOUT US SECTION-->
+		<div class="feedback">
+			<div class="contact-us">
+				<img src="contact_icon.png" alt="contact icon" />
+			<a href=#>Contact Us</a>  </div>
+			<div class="feedform">
+				<img src="feed_icon.png" alt="Feedback icon" />
+			<a href=#>Give us your Feedback </a></div>	
+				
+		</div>
+	</main>
+
+
+	<script src="app.js"></script>
 
 </body>
 
