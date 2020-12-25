@@ -55,7 +55,7 @@
 
             <tr class="buttons">
                 <td> <button type="Submit">Login</button></td>
-                <td> <button type="button" id="btn">Signup</button></td>
+                <td> <button type="button" id="mybtn">Signup</button></td>
             </tr>
 
         </table>
