@@ -1,26 +1,20 @@
 <?php session_start(); /* Starts the session */
 
-	/* Check Login form submitted */
+	
 	if(isset($_POST['Submit'])){
-		/* Define username and associated password array */
 		$logins = array('admin' => '123456','username1' => 'password1','username2' => 'password2');
-
-		/* Check and assign submitted Username and Password to new variable */
 		$Username = isset($_POST['Username']) ? $_POST['Username'] : '';
 		$Password = isset($_POST['Password']) ? $_POST['Password'] : '';
-
-		/* Check Username and Password existence in defined array */
 		if (isset($logins[$Username]) && $logins[$Username] == $Password){
-			/* Success: Set session variables and redirect to Protected page  */
 			$_SESSION['UserData']['Username']=$logins[$Username];
 			header("location:websiteko.html");
 			exit;
 		} else {
-			/*Unsuccessful attempt: Set error message */
 		         $msg="<span style='color:red; font-size:15px;'>Invalid Login Details</span>";
 		}
 	}
 ?>
+
 <!DOCTYPE HTML>
 
 <html>
@@ -28,40 +22,52 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial scale=1">
-    <title>BigBuilders' Account</title></title>
+    <title>BigBuilders' Account</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<center>
-    <body class="bgimg">
-        <div class="log_account">
-            <h1>Account</h1>
+
+<body class="loginbg">
+
+    <form action="" method="post" name="Login_Form">
+        <?php if(isset($msg)){?>
+
+        <?php echo $msg;?>
+
+        <?php } ?>
+        <table class="log_account">
+            <tr class="login">
+                <td class="manbg"> <img src="man-user.png" alt="logo" /></td>
+                <td> <h7>Login</h7></td>
+            </tr>
             <br>
+            <br>
+            <tr class="input">
+                <td>  <input type="text" placeholder="   abcd@email.com" name="awan" size="15" required> </td>
+                <td> <input type="password" placeholder="        as12ad3AW" size="15" required></td>
+            </tr>
+            <tr class="icon">
+                <td> <img src="user.png" alt="logo" /></td>
+                <td><img src="lock.png" alt="logo" /></td>
+
+            </tr>
 
 
-            <form class="reg" action="" method="post" name="Login_Form">
-                <b>
-			 <?php if(isset($msg)){?>
-    				
-    			  <?php echo $msg;?>
-    				
- 				   <?php } ?>
-			<br><br>
-                    Email: <input name="Username" type="text" placeholder="        abcd@email.com" name="awan" required>
-                    <br>
-                    <br>
-                    Password:<input name="Password" type="password" placeholder="        as12ad3AW" size="17" required>
-                    <br> <br>
-                    Not yet a member?&emsp;<a href="C:/Users/Asus/Documents/webdev/registration%20form.html">Register</a>
+            <tr class="buttons">
+                <td> <button type="Submit">Login</button></td>
+                <td> <button type="button">Signup</button></td>
+            </tr>
 
-                    <br><br>
-                    <div class="search">
+        </table>
 
-                        <button name="Submit" type="submit" value="Login">Login</button>
-                    </div>
-                </b>
+        </form>
 
-            </form>
-        </div>
-    </body>
-</center>
+</body>
+
 </html>
+
+
+
+
+
+  
+
