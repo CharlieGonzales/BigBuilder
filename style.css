@@ -873,7 +873,6 @@ feedback section
     display:flex;
     justify-content:center;
     align-items :center;
-    border:solid;
     flex-direction:column;
 }
 
