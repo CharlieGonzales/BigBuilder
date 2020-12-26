@@ -28,12 +28,7 @@
 </head>
 
 <body class="loginbg">
-    <?php if(isset($msg)){?>
-
-        <?php echo $msg;?>
-
-        <?php } ?>
-   
+    
         <table class="log_account">
 		 <form action="" method="post" name="Login_Form">
         
@@ -41,6 +36,12 @@
                 <td class="manbg"> <img src="man-user.png" alt="logo" /></td> 
             </tr>
                  <td> <h7>Login</h7></td>
+			 <?php if(isset($msg)){?>
+
+        <?php echo $msg;?>
+
+        <?php } ?>
+   
             <tr class="input">
                 <td>  <input  name="Username" type="text" placeholder="   abcd@email.com" name="awan" size="15" required> </td>
                 <td> <input name="Password" type="password" placeholder="        as12ad3AW" size="15" required></td>
