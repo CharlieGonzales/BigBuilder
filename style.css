@@ -973,6 +973,34 @@ contact.html
 }
 
 
+.submit-email{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    flex-direction:column;
+    top:475px;
+  }
+
+.submit-email .email-txt{
+display:flex;
+    }
+    
+.submit-email .button2 {
+     padding:70px 0px 200px 0px;
+ }
+.button2  button{
+        font-size:20px;
+        font-weight:bolder;
+        border-radius:10%;
+        width:70px;
+        height:30px;
+    }
+    .button2 button:hover {
+        font-size: 21px;
+        width: 72px;
+        height: 32px;
+    }
 @media screen and (max-width:768px){
     body {
         overflow-x: hidden;
