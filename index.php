@@ -10,7 +10,7 @@
 			header("location:websiteko.html");
 			exit;
 		} else {
-		        $msg="<span style='color:red'>Invalid Login Details</span>";
+		        $msg="<span style='color:red; left:100px;'>Invalid Login Details</span>";
 		}
 	}
 	
