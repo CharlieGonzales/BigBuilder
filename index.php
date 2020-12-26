@@ -55,13 +55,17 @@
 
             <tr class="buttons">
                 <td> <button type="Submit" name="Submit">Login</button></td>
-                <td> <button type="button" id="mybtn">Signup</button></td>
+                <td> <button type="button" id="mybtn" onclick="buttonFunction()">Signup</button></td>
             </tr>
 
         </table>
 
         </form>
-<script src="app.js"></script>
+<script>
+	function buttonFunction() {
+  location.replace('registration form.html')
+}
+	</script>
 </body>
 
 </html>
