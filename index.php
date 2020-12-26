@@ -32,14 +32,15 @@
    
         <table class="log_account">
 		 <form action="" method="post" name="Login_Form">
-        <?php if(isset($msg)){?>
-
-        <?php echo $msg;?>
-
-        <?php } ?>
+        
             <tr class="login">
                 <td class="manbg"> <img src="man-user.png" alt="logo" /></td>
                 <td> <h7>Login</h7></td>
+		    <?php if(isset($msg)){?>
+
+        <?php echo $msg;?>
+
+        <?php } ?>s
             </tr>
             <br>
             <br>
